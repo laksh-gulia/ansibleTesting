@@ -1,0 +1,14 @@
+---
+- name: Hello World Example
+  hosts: localhost
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World"
+
+    - name: Execute script for testing
+      script: runTests.sh
+      #debug: 
+        #msg: "Executing script command"
+
+    
